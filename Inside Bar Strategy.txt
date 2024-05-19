@@ -1,0 +1,23 @@
+Inside Bar Strategy
+
+Session Times
+-I need to be able to select the session time for the strategy
+- I need to be able to select a time period where no new trades will be placed so that I can avoid news spikes
+For example: no trades allowed between 7:30 am to 7:35 am
+
+Filter
+Use SMMA as filter (it was hard for me to find this in Ninjatrader. I will send you the indicator that has the SMMA in case you don’t already have it.)
+
+Entry Criteria
+Only go long on break of inside candle when inside candle closes above 21 SMMA.
+I need to be able to select the offset for the trigger. The default offset should be 48 ticks
+Only go short on break of inside candle when inside candle closes below 21 SMMA.
+I need to be able to select the offset for the trigger. The default offset should be 48 ticks
+
+Stop Loss
+I need to be able to select the Stop Loss amount in ticks. The default stop loss is 40 ticks
+
+Take Profit
+There should be 2 options for Take profit
+First option should be a lookback function ( I should be able to select how many bars to lookback from the entry bar) Default is 10 bar lookback.
+If there are no bars available for the lookback then the alternate TP should be full ATR value based on the inside candle.
